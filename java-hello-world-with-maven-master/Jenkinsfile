@@ -1,16 +1,9 @@
-pipeline{
-    agent any
-
-    tools {
-         maven 'maven'
-         jdk 'java'
-    }
-
-    stages{
-       
-         stage('Echo Stage') {
+pipeline {
+    agent any 
+    stages {
+        stage('Echo Message') {
             steps {
-                echo 'This is the end of the build!'
+                echo 'This is a simple echo statement in Jenkins.' 
             }
         }
     }
